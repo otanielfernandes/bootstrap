@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-pt">
+
+<head>
+  <title>Popover Bootstrap</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body class="container mt-5">
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <h1 class="text-center bg-success text-light">Popovers</h1>
+    <div class="row my-5">
+      <div class="col col-3">
+      <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" title="Top popover" data-bs-content="Este popover encontra-se em cima">
+          Popover em Cima
+      </button>
+      </div>
+
+      <div class=" col col-3">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Right Popover" data-bs-content="Este popover encontra-se a direita">
+          Popover na Direita
+        </button>
+      </div>
+
+      <div class="col col-3">
+        <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"  title="Bottom Popover" data-bs-content="Este popover encontra-se em baixo">
+          Popover em Baixo
+        </button>
+      </div>
+
+      <div class="col col-3">
+        <button type="button" class="btn btn-info" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Left Popover" data-bs-content="Este popover enconta-se a esquerda">
+          Popover na Esquerda
+        </button>
+      </div>
+    </div>
+
+    <h1 class="text-center bg-info text-light">Tooltips</h1>
+    <div class=" container row bg-dark">
+      <div class="col-6 mx-auto d-block">
+        <button type="button" class="btn btn-secondary"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Você precisa de ajuda ?">
+        Help ?
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>
