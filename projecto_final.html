@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-pt">
+
+<head>
+  <title>Projeto Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height:80px;">
+    <div class="container">
+      <a class="navbar-brand text-primary" href="#"><strong>Website.</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quem somos</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clientes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfólios</a>
+          </li>
+        </ul>
+        <div>
+          <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Contacte-nos</button>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Preencha este formulário</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action autocomplete="on">
+          <div class="input-group">
+            <input type="text" placeholder="Seu nome" class="form-control text-center" required>
+            <input type="text" placeholder="Seu sobrenome" class="form-control text-center" required>  
+          </div>
+          <input type="email" placeholder="otanielfer@gmail.com" class="form-control text-center" required>
+          <textarea placeholder="Digite sua mensagem" class="form-control"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="envia">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </nav>
+
+
+  <header class=" container my-5">
+    <div class="row">
+      <div class="col-12 col-lg-6" style="margin-top:100px;">
+        <h1 class="mt-5 display-5 text-center text-md-start">Seja bem-vindo a nossa 
+          <span class="text-primary">Empresa.</span>
+          <br>  
+          Criamos Websites.
+        </h1>
+        <p class=" mt-4 lead text-muted text-center text-md-start mb-6 mb-lg-8">Nossa Empresa usa um framework poderoso para a construção de Websites, esse framework chama-se "Bootstrap"</p>
+        
+        <div class="mt-5">
+          <button class="btn btn-primary btn-lg">Saiba mais<i class="px-1 bi bi-arrow-right"></i></i></button>
+          <button class="btn btn-outline-primary btn-lg">Conheça nossos Clientes</button>
+        </div>
+      </div>
+
+      <div class=" col-12 col-lg-6">
+        <img class="img-fluid p-5" src="imagecircular.png">
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-4">
+        <div class="card border-0">
+          <i class="icones2 bi bi-toggles2 text-primary ms-3"></i>
+          <div class="card-body">
+            <h5 class="card-title">Clientes</h5>
+            <p class="card-text text-muted">Conheça nossos principais clientes, que apostaram na nossa empresa.</p>
+            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card border-0">
+          <i class="icones2 bi  bi-cloud-download-fill text-primary ms-3"></i>
+          <div class="card-body">
+            <h5 class="card-title">Servidores</h5>
+            <p class="card-text  text-muted">Conheça nossos servidores de hospedagem e domínio nas nuvens</p>
+            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card border-0">
+          <i class="icones2 bi bi-info-square-fill text-primary ms-3"></i>
+          <div class="card-body">
+            <h5 class="card-title">Informações</h5>
+            <p class="card-text text-muted">Clique no botão abaixo para saber mais dos recursos da nossa empresa</p>
+            <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="bg-dark text-center text-light pt-4">
+   <span>Site desenvolvido por <a id="link" href="https://github.com/otanielfernandes" target="_blank">&reg;Otaniel Fernandes</a></span>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+
+  </script>
+</body>
+
+</html>
